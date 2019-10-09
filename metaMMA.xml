@@ -5,7 +5,7 @@
   <Description>metaMMA is for users who add popular MMA event videos to their Plex Media Server or their KODI library. It can monitor your completed downloads directory, move the video files, rename the video files, add a .nfo file with pertinent meta-data, and add event posters.</Description>
   <Registry>https://registry.hub.docker.com/u/QQQQQQQQQQQQQQ</Registry>
   <Repository>metaMMA/metaMMA</Repository>
-  <TemplateURL>QQQQQQQQQQQQQQQQQQQQQ</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/metaMMA/metaMMA-Docker-Template/master/metaMMA.xml</TemplateURL>
   <Category>Downloaders: MediaApp:Video</Category>
   <Shell>bash</Shell>
   <BindTime>true</BindTime>

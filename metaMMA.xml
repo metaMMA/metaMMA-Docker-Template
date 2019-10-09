@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>metaMMA</Name>
+  <Overview>metaMMA creates meta-data for MMA events to be used by Plex Media Server or KODI.</Overview>
+  <Description>metaMMA is for users who add popular MMA event videos to their Plex Media Server or their KODI library. It can monitor your completed downloads directory, move the video files, rename the video files, add a .nfo file with pertinent meta-data, and add event posters.</Description>
+  <Registry>https://registry.hub.docker.com/u/QQQQQQQQQQQQQQ</Registry>
+  <Repository>metaMMA/metaMMA</Repository>
+  <TemplateURL>QQQQQQQQQQQQQQQQQQQQQ</TemplateURL>
+  <Category>Downloaders: MediaApp:Video</Category>
+  <Shell>bash</Shell>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/QQQQQQQQQQQQQ</Support>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3333</HostPort>
+        <ContainerPort>3333</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/completed</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/promotions</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Completed" Target="/completed" Default="" Mode="rw" Description="Completed - /completed" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Promotions" Target="/promotions" Default="" Mode="rw" Description="Promotions - /promotions" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Appdata" Target="/metaMMA" Default="" Mode="rw" Description="Appdata" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="Webui" Target="3333" Default="3333" Mode="tcp" Description="For access to the metaMMA webUI" Type="Port" Display="advanced" Required="false" Mask="false">3333</Config>
+  <Config Name="PUID" Target="PUID" Default="" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Version>QQQQQQQQQQQQQ</Version>
+  <WebUI>http://[iP]:[PORT:3333]/</WebUI>
+  <Icon>QQQQQQQQQQQQQ</Icon>
+  <ExtraParams></ExtraParams>
+</Container>

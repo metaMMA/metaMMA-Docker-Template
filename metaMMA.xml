@@ -10,7 +10,7 @@
   <Shell>bash</Shell>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/QQQQQQQQQQQQQ</Support>
+  <Support>https://forums.unraid.net/topic/84143-support-metamma/</Support>
   <Environment/>
   <Networking>
     <Mode>bridge</Mode>
@@ -53,8 +53,8 @@
   <Config Name="Webui" Target="3333" Default="3333" Mode="tcp" Description="For access to the metaMMA webUI" Type="Port" Display="advanced" Required="false" Mask="false">3333</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
-  <Version>QQQQQQQQQQQQQ</Version>
+  <Version>0.3</Version>
   <WebUI>http://[iP]:[PORT:3333]/</WebUI>
-  <Icon>QQQQQQQQQQQQQ</Icon>
+  <Icon>https://avatars1.githubusercontent.com/u/26493508?s=460&v=4</Icon>
   <ExtraParams></ExtraParams>
 </Container>
